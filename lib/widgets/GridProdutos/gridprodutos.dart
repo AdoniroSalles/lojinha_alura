@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loja_alura/models/movel.dart';
-
-import 'imagem_elemento_gridprodutos.dart';
+import 'package:loja_alura/widgets/GridProdutos/elemento_gridprodutos.dart';
 
 class GridProdutosPage extends StatelessWidget {
   final moveis;
@@ -18,9 +17,7 @@ class GridProdutosPage extends StatelessWidget {
       itemBuilder: (context, index) {
         final movel = Movel.fromJson(moveis[index]);
 
-        return ImageElementoGridProdutos(
-          imagem: movel.foto,
-        );
+        return ElementoGridProtudos(movel: movel);
       },
     );
   }

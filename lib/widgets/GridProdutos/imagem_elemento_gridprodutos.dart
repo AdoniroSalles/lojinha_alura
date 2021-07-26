@@ -7,9 +7,11 @@ class ImageElementoGridProdutos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image(
-      image: AssetImage('utils/assets/imagens/$imagem'),
-      fit: BoxFit.cover,
+    return Positioned.fill(
+      child: Image(
+        image: AssetImage('utils/assets/imagens/$imagem'),
+        fit: BoxFit.cover,
+      ),
     );
   }
 }
