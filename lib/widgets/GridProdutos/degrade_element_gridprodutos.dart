@@ -8,7 +8,10 @@ class DegradeGrideProdutos extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Colors.transparent, Color.fromRGBO(178, 155, 178, 1)],
+          colors: [
+            Colors.transparent,
+            Theme.of(context).primaryColor,
+          ],
         ),
       ),
     );

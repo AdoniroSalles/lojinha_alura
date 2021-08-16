@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:loja_alura/pages/carrinho.dart';
 import 'package:loja_alura/pages/detalhes.dart';
 import 'package:loja_alura/pages/inicio.dart';
+import 'package:loja_alura/paleta_cores.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: PaletaCores().lilas,
+        textTheme: TextTheme(
+          headline1: TextStyle(
+            fontSize: 20,
+            fontFamily: 'Alata',
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
+          headline2: TextStyle(
+            fontSize: 20,
+            fontFamily: 'Alata',
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
       ),
       home: InicioPage(),
       routes: {

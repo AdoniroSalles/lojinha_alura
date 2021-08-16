@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:loja_alura/pages/detalhes.dart';
 import 'package:loja_alura/widgets/appbar_custom.dart';
 import 'package:loja_alura/widgets/GridProdutos/gridprodutos.dart';
 
